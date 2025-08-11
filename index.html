@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+ 
+<body>
+    <div id="main">
+        
+        <div id="header">
+
+            <div id="header_logo_div">
+
+                <img src="eve logo.svg" id="header_logo_img" />
+
+            </div>
+
+            <div id="header_company-name-logo_div">
+
+                <h1 id="header_company-name-logo_h1">Eva Design System</h1>
+
+                <p id="header_company-name-logo_p">Deep learning color generator</p>
+
+            </div>
+
+            <div id="header_company-name_div">
+
+                <h1 id="header_company-name_h1">Eva Design System</h1>
+
+            </div>
+
+            <div id="header_theme_button_div">
+                <a onclick="day()" href="#">
+                    <div id="header_theme_button_day">
+                        <img id="light_img" src="day.svg" />
+                    </div>
+                </a>
+                <a onclick="night()" href="#">
+                    <div id="header_theme_button_night">
+                        <img id="night_img" src="night.svg" />
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div id="container">
+
+            <div id="container_top">
+
+                <div id="container_top_brand-color_div">
+
+                    <span id="container_top_brand-color_span_1">
+
+                        <div id="container_top_brand-color_span_1_div">1</div>
+
+                    </span>
+
+                    <span id="container_top_brand-color_span_h1">Brand Color</span>
+
+                </div>
+
+
+                <div id="container_top_semantic-color_div">
+
+                    <span id="container_top_semantic-color_span_2">
+
+                        <div id="container_top_semantic-color_span_2_div">2</div>
+
+                    </span>
+
+                    <span id="container_top_semantic-color_span_h1">semantic Color</span>
+
+                </div>
+
+                <img src="retrylogo.svg" id="container_top_retry_img" />
+
+                <div id="container_top_export-btn_div">
+
+                    <div id="container_top_export-btn">
+
+                        <div id="container_top_export-btn_img_div">
+
+                            <img src="download.svg" id="container_top_export-btn_img" />
+
+                        </div>
+
+                        <div id="container_top_export-btn_p_div">
+
+                            <span id="container_top_export-btn_p">EXPORT</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="container_middle">
+
+                <div id="container_middle_color-picker_primary">
+
+                    <p id="container_middle_color-picker_primary_p">Primary</p>
+
+                    <div id="container_middle_color-picker_primary_div">
+
+                        <div id="container_middle_color_choose_primary_div">
+
+                            <div id="h"><input type="color" onchange="primary()" id="Primary_color-picker"
+                                    value="#3366FF" /></div>
+
+                            <div id="g"><input type="text" id="Primary_input" value="#3366FF"  /></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="container_middle_color-picker_success">
+
+                    <p id="container_middle_color-picker_success_p">Success</p>
+
+                    <div id="container_middle_color-picker_success_div">
+
+                        <div id="container_middle_color_choose_success_div">
+                            <div id="gh2">
+                                <div id="h2"><input type="color" onchange="success()" id="Success_color-picker"
+                                        value="#9FD60A" /></div>
+                                <div id="g2"><input type="text" id="Success_input" value="#9FD60A" /></div>
+                            </div>
+                            <div id="i2"  onclick="success_btn()"><img id="img2" src="lock.svg"   /></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="container_middle_color-picker_info">
+
+                    <p id="container_middle_color-picker_info_p" >Info</p>
+
+                    <div id="container_middle_color-picker_info_div">
+
+                        <div id="container_middle_color_choose_info_div">
+                            <div id="gh3">
+                                <div id="h3"><input type="color" onchange="info()" id="info_color-picker"
+                                        value="#00BFFF" /></div>
+
+                                <div id="g3"><input type="text" id="info_input"  value="#00BFFF" /></div>
+
+
+                            </div>
+                            <div id="i3" onclick="info_btn()"><img id="img3" src="lock.svg" /></div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="container_middle_color-picker_warning">
+
+                    <p id="container_middle_color-picker_warning_p">Warning</p>
+
+                    <div id="container_middle_color-picker_warning_div">
+
+                        <div id="container_middle_color_choose_warning_div">
+                            <div id="gh4">
+                                <div id="h4"><input type="color" onchange="warning()" id="warning_color-picker"
+                                        value="#F9CF27" /></div>
+
+                                <div id="g4"><input type="text" id="warning_input" value="#F9CF27" /></div>
+                            </div>
+                            <div id="i4" onclick="warning_btn()"><img id="img3" src="lock.svg" /></div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="container_middle_color-picker_danger">
+
+                    <p id="container_middle_color-picker_danger_p">Danger</p>
+
+                    <div id="container_middle_color-picker_danger_div">
+
+                        <div id="container_middle_color_choose_danger_div">
+                            <div id="gh5">
+                                <div id="h5"><input type="color" onchange="danger()" id="danger_color-picker"
+                                        value="#FC622A" />
+                                </div>
+
+                                <div id="g5"><input type="text" id="danger_input" value="#FC622A" /></div>
+                            </div>
+                            <div id="i5" onclick="danger_btn()"><img id="img3" src="lock.svg" /></div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="container_bottom">
+
+                <div id="container_bottom_primary_div">
+
+                    <div id="container_bottom_primary_div-label_main1">
+
+                        <label id="container_bottom_primary_label_100">100</label>
+
+                        <div id="container_bottom_primary_d1">
+                            <h2 id="hexavalue_primary_d1"></h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_primary_div-label_main2">
+
+                        <label id="container_bottom_primary_label_200">200</label>
+
+                        <div id="container_bottom_primary_d2">
+                            <h2 id="hexavalue_primary_d2"></h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_primary_div-label_main3">
+
+                        <label id="container_bottom_primary_label_300">300</label>
+
+                        <div id="container_bottom_primary_d3">
+                            <h2 id="hexavalue_primary_d3"></h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_primary_div-label_main4">
+
+                        <label id="container_bottom_primary_label_400">400</label>
+
+                        <div id="container_bottom_primary_d4">
+                            <h2 id="hexavalue_primary_d4"></h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_primary_div-label_main5">
+
+                        <label id="container_bottom_primary_label_500">500</label>
+
+                        <div id="container_bottom_primary_d5">
+                            <h2 id="hexavalue_primary_d5"></h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_primary_div-label_main6">
+
+                        <label id="container_bottom_primary_label_600">600</label>
+
+                        <div id="container_bottom_primary_d6">
+                            <h2 id="hexavalue_primary_d6"></h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_primary_div-label_main7">
+
+                        <label id="container_bottom_primary_label_700">700</label>
+
+                        <div id="container_bottom_primary_d7">
+                            <h2 id="hexavalue_primary_d7"></h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_primary_div-label_main8">
+
+                        <label id="container_bottom_primary_label_800">800</label>
+
+                        <div id="container_bottom_primary_d8">
+                            <h2 id="hexavalue_primary_d8"></h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_primary_div-label_main9">
+
+                        <label id="container_bottom_primary_label_900">900</label>
+
+                        <div id="container_bottom_primary_d9">
+                            <h2 id="hexavalue_primary_d9"></h2>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="container_bottom_success_div">
+
+
+
+                    <div id="container_bottom_success_div-label_main1">
+
+                        <label id="container_bottom_success_label_100">100</label>
+
+                        <div  id="container_bottom_success_d1" onclick="success_copy_d1()">
+                            <h2   id="hexavalue_success_d1">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_success_div-label_main2">
+
+                        <label id="container_bottom_success_label_200">200</label>
+
+                        <div id="container_bottom_success_d2">
+                            <h2 id="hexavalue_success_d2">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_success_div-label_main3">
+
+                        <label id="container_bottom_success_label_300">300</label>
+
+                        <div id="container_bottom_success_d3">
+                            <h2 id="hexavalue_success_d3">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_success_div-label_main4">
+
+                        <label id="container_bottom_success_label_400">400</label>
+
+                        <div id="container_bottom_success_d4">
+                            <h2 id="hexavalue_success_d4">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_success_div-label_main5">
+
+                        <label id="container_bottom_success_label_500">500</label>
+
+                        <div id="container_bottom_success_d5">
+                            <h2 id="hexavalue_success_d5">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_success_div-label_main6">
+
+                        <label id="container_bottom_success_label_600">600</label>
+
+                        <div id="container_bottom_success_d6">
+                            <h2 id="hexavalue_success_d6">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_success_div-label_main7">
+
+                        <label id="container_bottom_success_label_700">700</label>
+
+                        <div id="container_bottom_success_d7">
+                            <h2 id="hexavalue_success_d7">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_success_div-label_main8">
+
+                        <label id="container_bottom_success_label_800">800</label>
+
+                        <div id="container_bottom_success_d8">
+                            <h2 id="hexavalue_success_d8">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_success_div-label_main9">
+
+                        <label id="container_bottom_success_label_900">900</label>
+
+                        <div id="container_bottom_success_d9">
+                            <h2 id="hexavalue_success_d9">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div id="container_bottom_info_div">
+
+                    <div id="container_bottom_info_div-label_main1">
+
+                        <label id="container_bottom_info_label_100">100</label>
+
+                        <div id="container_bottom_info_d1">
+                            <h2 id="hexavalue_info_d1">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_info_div-label_main2">
+
+                        <label id="container_bottom_info_label_200">200</label>
+
+                        <div id="container_bottom_info_d2">
+                            <h2 id="hexavalue_info_d2">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_info_div-label_main3">
+
+                        <label id="container_bottom_info_label_300">300</label>
+
+                        <div id="container_bottom_info_d3">
+                            <h2 id="hexavalue_info_d3">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_info_div-label_main4">
+
+                        <label id="container_bottom_info_label_400">400</label>
+
+                        <div id="container_bottom_info_d4">
+                            <h2 id="hexavalue_info_d4">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_info_div-label_main5">
+
+                        <label id="container_bottom_info_label_500">500</label>
+
+                        <div id="container_bottom_info_d5">
+                            <h2 id="hexavalue_info_d5">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_info_div-label_main6">
+
+                        <label id="container_bottom_info_label_600">600</label>
+
+                        <div id="container_bottom_info_d6">
+                            <h2 id="hexavalue_info_d6">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_info_div-label_main7">
+
+                        <label id="container_bottom_info_label_700">700</label>
+
+                        <div id="container_bottom_info_d7">
+                            <h2 id="hexavalue_info_d7">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_info_div-label_main8">
+
+                        <label id="container_bottom_info_label_800">800</label>
+
+                        <div id="container_bottom_info_d8">
+                            <h2 id="hexavalue_info_d8">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_info_div-label_main9">
+
+                        <label id="container_bottom_info_label_900">900</label>
+
+                        <div id="container_bottom_info_d9">
+                            <h2 id="hexavalue_info_d9">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div id="container_bottom_warning_div">
+
+                    <div id="container_bottom_warning_div-label_main1">
+
+                        <label id="container_bottom_warning_label_100">100</label>
+
+                        <div id="container_bottom_warning_d1">
+                            <h2 id="hexavalue_warning_d1">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_warning_div-label_main2">
+
+                        <label id="container_bottom_warning_label_200">200</label>
+
+                        <div id="container_bottom_warning_d2">
+                            <h2 id="hexavalue_warning_d2">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_warning_div-label_main3">
+
+                        <label id="container_bottom_warning_label_300">300</label>
+
+                        <div id="container_bottom_warning_d3">
+                            <h2 id="hexavalue_warning_d3">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_warning_div-label_main4">
+
+                        <label id="container_bottom_warning_label_400">400</label>
+
+                        <div id="container_bottom_warning_d4">
+                            <h2 id="hexavalue_warning_d4">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_warning_div-label_main5">
+
+                        <label id="container_bottom_warning_label_500">500</label>
+
+                        <div id="container_bottom_warning_d5">
+                            <h2 id="hexavalue_warning_d5">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_warning_div-label_main6">
+
+                        <label id="container_bottom_warning_label_600">600</label>
+
+                        <div id="container_bottom_warning_d6">
+                            <h2 id="hexavalue_warning_d6">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_warning_div-label_main7">
+
+                        <label id="container_bottom_warning_label_700">700</label>
+
+                        <div id="container_bottom_warning_d7">
+                            <h2 id="hexavalue_warning_d7">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_warning_div-label_main8">
+
+                        <label id="container_bottom_warning_label_800">800</label>
+
+                        <div id="container_bottom_warning_d8">
+                            <h2 id="hexavalue_warning_d8">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_warning_div-label_main9">
+
+                        <label id="container_bottom_warning_label_900">900</label>
+
+                        <div id="container_bottom_warning_d9">
+                            <h2 id="hexavalue_warning_d9">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div id="container_bottom_danger_div">
+
+                    <div id="container_bottom_danger_div-label_main1">
+
+                        <label id="container_bottom_danger_label_100">100</label>
+
+                        <div id="container_bottom_danger_d1">
+                            <h2 id="hexavalue_danger_d1">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_danger_div-label_main2">
+
+                        <label id="container_bottom_danger_label_200">200</label>
+
+                        <div id="container_bottom_danger_d2">
+                            <h2 id="hexavalue_danger_d2">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_danger_div-label_main3">
+
+                        <label id="container_bottom_danger_label_300">300</label>
+
+                        <div id="container_bottom_danger_d3">
+                            <h2 id="hexavalue_danger_d3">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_danger_div-label_main4">
+
+                        <label id="container_bottom_danger_label_400">400</label>
+
+                        <div id="container_bottom_danger_d4">
+                            <h2 id="hexavalue_danger_d4">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_danger_div-label_main5">
+
+                        <label id="container_bottom_danger_label_500">500</label>
+
+                        <div id="container_bottom_danger_d5">
+                            <h2 id="hexavalue_danger_d5">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_danger_div-label_main6">
+
+                        <label id="container_bottom_danger_label_600">600</label>
+
+                        <div id="container_bottom_danger_d6">
+                            <h2 id="hexavalue_danger_d6">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_danger_div-label_main7">
+
+                        <label id="container_bottom_danger_label_700">700</label>
+
+                        <div id="container_bottom_danger_d7">
+                            <h2 id="hexavalue_danger_d7">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_danger_div-label_main8">
+
+                        <label id="container_bottom_danger_label_800">800</label>
+
+                        <div id="container_bottom_danger_d8">
+                            <h2 id="hexavalue_danger_d8">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                    <div id="container_bottom_danger_div-label_main9">
+
+                        <label id="container_bottom_danger_label_900">900</label>
+
+                        <div id="container_bottom_danger_d9">
+                            <h2 id="hexavalue_danger_d9">b1459f</h2>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
